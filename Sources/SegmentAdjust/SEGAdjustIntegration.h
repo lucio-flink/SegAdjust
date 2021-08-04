@@ -1,11 +1,7 @@
 #import <Foundation/Foundation.h>
-#import <Adjust/Adjust.h> 
+#import <Adjust.h> 
 
-#if defined(__has_include) && __has_include(<Analytics/SEGAnalytics.h>)
-#import <Analytics/SEGAnalytics.h>
-#else
-#import <Segment/SEGAnalytics.h>
-#endif
+#import <SEGAnalytics.h>
 
 
 @interface SEGAdjustIntegration : NSObject <SEGIntegration, AdjustDelegate>
