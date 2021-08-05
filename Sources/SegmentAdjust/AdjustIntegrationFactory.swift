@@ -1,18 +1,18 @@
 import Foundation
 import Segment
 
-class AdjustIntegrationFactory: SEGIntegrationFactory {
+public class AdjustIntegrationFactory: SEGIntegrationFactory {
     public let instance = AdjustIntegrationFactory()
     
     public init() {
         
     }
     
-    func create(withSettings settings: [AnyHashable : Any], for analytics: Analytics) -> Integration {
+    public func create(withSettings settings: [AnyHashable : Any], for analytics: Analytics) -> Integration {
         return AdjustIntegration(settings: settings, analytics: analytics)
     }
     
-    func key() -> String {
+    public func key() -> String {
         return "Adjust"
     }
 }
