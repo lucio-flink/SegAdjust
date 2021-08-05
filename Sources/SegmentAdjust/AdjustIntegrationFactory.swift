@@ -2,7 +2,7 @@ import Foundation
 import Segment
 
 public class AdjustIntegrationFactory: SEGIntegrationFactory {
-    public let instance = AdjustIntegrationFactory()
+    public static let instance = AdjustIntegrationFactory()
     
     public init() {
         
