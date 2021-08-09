@@ -79,6 +79,10 @@ public class AdjustIntegration: SegmentIntegration {
         
     }
     
+    public override func screen(_ payload: ScreenPayload) {
+        // Overrides this method to avoid crash. Screen track not needed for Adjust
+    }
+    
     public override func reset() {
         Adjust.resetSessionPartnerParameters()
     }
@@ -86,8 +90,6 @@ public class AdjustIntegration: SegmentIntegration {
     public override func registeredForRemoteNotifications(withDeviceToken deviceToken: Data) {
         Adjust.setDeviceToken(deviceToken)
     }
-    
-    
     
     // MARK: - Configuration
     
