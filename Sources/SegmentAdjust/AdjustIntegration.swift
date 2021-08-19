@@ -92,13 +92,13 @@ public class AdjustIntegration: SegmentIntegration {
     }
     
     public override func applicationDidEnterBackground() {
-        if Thread.isMainThread {
-            super.applicationDidEnterBackground()
-        } else {
-            DispatchQueue.main.async {
-                self.applicationDidEnterBackground()
-            }
-        }
+//        if Thread.isMainThread {
+//            super.applicationDidEnterBackground()
+//        } else {
+//            DispatchQueue.main.async {
+//                self.applicationDidEnterBackground()
+//            }
+//        }
     }
     
     public override func flush() {
