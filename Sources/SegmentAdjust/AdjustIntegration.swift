@@ -91,7 +91,7 @@ public class AdjustIntegration: SegmentIntegration {
         Adjust.setDeviceToken(deviceToken)
     }
     
-    public override func applicationDidEnterBackground() {
+//    public override func applicationDidEnterBackground() {
 //        if Thread.isMainThread {
 //            super.applicationDidEnterBackground()
 //        } else {
@@ -99,11 +99,11 @@ public class AdjustIntegration: SegmentIntegration {
 //                self.applicationDidEnterBackground()
 //            }
 //        }
-    }
+//    }
         
-    public override func flush() {
-        
-    }
+//    public override func flush() {
+//        
+//    }
     
     // MARK: - Configuration
     
