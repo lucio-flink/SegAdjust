@@ -100,7 +100,7 @@ public class AdjustIntegration: SegmentIntegration {
 //            }
 //        }
     }
-    
+        
     public override func flush() {
         
     }
