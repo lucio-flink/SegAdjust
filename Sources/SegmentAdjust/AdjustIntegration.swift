@@ -101,6 +101,10 @@ public class AdjustIntegration: SegmentIntegration {
         }
     }
     
+    public override func flush() {
+        
+    }
+    
     // MARK: - Configuration
     
     private func getMappedCustomEventToken(event: String) -> String? {
