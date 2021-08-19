@@ -91,6 +91,16 @@ public class AdjustIntegration: SegmentIntegration {
         Adjust.setDeviceToken(deviceToken)
     }
     
+    public override func applicationDidEnterBackground() {
+        if Thread.isMainThread {
+            super.applicationDidEnterBackground()
+        } else {
+            DispatchQueue.main.async {
+                self.applicationDidEnterBackground()
+            }
+        }
+    }
+    
     // MARK: - Configuration
     
     private func getMappedCustomEventToken(event: String) -> String? {
